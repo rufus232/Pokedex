@@ -61,22 +61,7 @@ h3 {
   border: 1px solid #ccc;
 }
 
-.pkm-card {
-  height: auto;
-  width: auto;
-  padding: 1rem;
-  border-radius: 20px;
-  background-color: white;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: 900;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .pkm-images {
   height: 60%;
