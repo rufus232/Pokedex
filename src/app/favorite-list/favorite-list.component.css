@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.pkm-card {
+  height: auto;
+  width: auto;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pkm-card:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 2px 15px 4px #000000;
+}

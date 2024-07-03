@@ -1,0 +1,26 @@
+<div class="search-container">
+  <input type="text" placeholder="Rechercher un Pokémon"  (input)="searchPokemons()">
+    <option value="">Tous les types</option>
+    <option *ngFor="let type of types" [value]="type">{{ type }}</option>
+</div>
+
+<div>
+  <ul class="container">
+    @for (pokemon of pokemons; track pokemon.name) {
+      <div class="containers">
+        <li class="pkm-card">
+          <h3>{{ pokemon.name }}</h3>
+          <img [src]="pokemon.image" alt="{{ pokemon.name }}" class="pkm-images">
+        </li>
+        <div class="">
+          <button (click)="goToPokemonDetail(pokemon.id)">Voir détails</button>
+        <button (click)="addToFavorites(pokemon)">Add to Favorites</button>
+        </div>
+
+      </div>
+    }
+
+  </ul>
+</div>
+<div >
+

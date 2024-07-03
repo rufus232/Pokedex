@@ -1,0 +1,11 @@
+<div >
+  <ul class="container">
+    @for (pokemon of favorites; track trackById) {
+    <li class="pkm-card">
+      <h3>{{ pokemon.name }}</h3>
+      <img [src]="pokemon.image" alt="{{ pokemon.name }}" class="pkm-images">
+      <button (click)="removeFromFavorites(pokemon)">Supprimer des Favorites</button>
+    </li>
+  }
+  </ul>
+</div>

@@ -1,0 +1,38 @@
+
+<div class="detail-container">
+  <h2>{{ pokemonDetails.name }}</h2>
+  <img [src]="pokemonDetails.sprites.front_default" alt="{{ pokemonDetails.name }}" class="pkm-image">
+
+  <h3>Abilities:</h3>
+  <ul>
+    @for (ability of pokemonDetails.abilities; track pokemonDetails.abilities ) {
+    <li >
+      {{ ability.ability.name }}
+    </li>
+     }
+  </ul>
+
+  <h3>Types:</h3>
+  <ul>
+    @for (type of pokemonDetails.types; track pokemonDetails.types ) {
+    <li>
+      {{ type.type.name }}
+    </li>
+  }
+  </ul>
+
+  <h3>Base Experience: {{ pokemonDetails.base_experience }}</h3>
+  <h3>Height: {{ pokemonDetails.height }}</h3>
+  <h3>Weight: {{ pokemonDetails.weight }}</h3>
+  <h3>Stats:</h3>t
+  <ul>
+    @for (stat of pokemonDetails.stats; track pokemonDetails.stats ) {
+
+    <li>
+      {{ stat.stat.name }}: {{ stat.base_stat }}
+    </li>
+  }
+
+  </ul>
+
+</div>
